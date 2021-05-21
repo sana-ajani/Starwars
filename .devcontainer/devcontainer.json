@@ -61,7 +61,8 @@
 	"extensions": [
 		"vscjava.vscode-java-pack",
 		"ms-vsliveshare.vsliveshare-pack",
-		"goessner.mdmath"
+		"goessner.mdmath",
+		"vsls-contrib.codetour"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
