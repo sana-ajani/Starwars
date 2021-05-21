@@ -1,0 +1,51 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Assignment Details",
+  "steps": [
+    {
+      "file": "Simulation.java",
+      "description": "The year is 4 ABY and the galaxy is in the middle of an epic battle. It's the Rebellion against the Galactic Empire, trying to restore the Republic. Your job is to finish building this simulator that will help us predict the outcome of battles with the Empire.\n",
+      "line": 46,
+      "selection": {
+        "start": {
+          "line": 46,
+          "character": 5
+        },
+        "end": {
+          "line": 46,
+          "character": 106
+        }
+      }
+    },
+    {
+      "file": "Soldier.java",
+      "description": "We're learning about inheritance and polymorphism. This Soldier is the basic type that will be used to make the other classes. All soliders have the following attributes: \n\n```Java\nprivate double health \nprivate double attack \nprivate double defense\nprivate String identifier\n```",
+      "line": 10,
+      "selection": {
+        "start": {
+          "line": 4,
+          "character": 1
+        },
+        "end": {
+          "line": 8,
+          "character": 31
+        }
+      }
+    },
+    {
+      "file": "RebelSoldier.java",
+      "description": "All RebelSoldiers and Jedi are on the side of the Rebellion. \n",
+      "line": 8
+    },
+    {
+      "file": "Stormtrooper.java",
+      "description": "All Stormtroopers and Sith are on the side of the Empire.",
+      "line": 7
+    },
+    {
+      "file": "Battlefront.java",
+      "description": "This is the main method which executes the simulation program. \n\n**TIP**: Make sure you instantiate only one Scanner object! ",
+      "line": 9
+    }
+  ]
+}

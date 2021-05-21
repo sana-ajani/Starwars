@@ -1,0 +1,76 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.159.0/containers/java
+{
+	"name": "Java",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			// Update the VARIANT arg to pick a Java version: 11, 14
+			"VARIANT": "11",
+			// Options
+			"INSTALL_MAVEN": "true",
+			"INSTALL_GRADLE": "false",
+			"INSTALL_NODE": "false",
+			"NODE_VERSION": "lts/*"
+		}
+	},
+
+	// Set *default* container specific settings.json values on container create.
+	"settings": { 
+		//Java specific
+		"java.home": "/docker-java-home",
+		"maven.executable.path": "/usr/local/sdkman/candidates/maven/current/bin/mvn",
+
+		//Editing
+		"editor.quickSuggestions": false,
+		"editor.wordWrap": "on",
+		"editor.cursorBlinking": "smooth",
+		"editor.minimap.enabled": false,
+		"editor.renderIndentGuides": true,
+		"editor.renderWhitespace": "all",
+		"editor.smoothScrolling": true,
+		"editor.suggestSelection": "first",
+		"editor.tabCompletion": "on",
+		"workbench.editor.untitled.labelFormat": "name",
+		"editor.fontSize": 15,
+	  
+		//Debugging
+		"debug.inlineValues": true,
+		
+		//Intellisense
+		"editor.suggest.showStatusBar": true,
+		"diffEditor.ignoreTrimWhitespace": false,
+	  
+		//Layout
+		"editor.dragAndDrop": false,
+		"workbench.startupEditor": "welcomePage", 
+		"workbench.settings.editor": "ui",
+		"update.showReleaseNotes": false,
+		"explorer.openEditors.visible": 0,
+		"explorer.compactFolders": false,
+	  
+		//Autosave
+		"files.autoSave": "afterDelay",
+		"files.autoSaveDelay": 500,
+
+		//Terminal
+		"terminal.integrated.shell.linux": "/bin/bash",
+	  }
+	},
+	
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"vscjava.vscode-java-pack",
+		"ms-vsliveshare.vsliveshare-pack",
+		"goessner.mdmath"
+	],
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "java -version",
+
+	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "vscode"
+}
