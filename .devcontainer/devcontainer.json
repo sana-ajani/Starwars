@@ -32,7 +32,7 @@
 		"editor.suggestSelection": "first",
 		"editor.tabCompletion": "on",
 		"workbench.editor.untitled.labelFormat": "name",
-		"editor.fontSize": 15,
+		"editor.fontSize": 13,
 	  
 		//Debugging
 		"debug.inlineValues": true,
