@@ -53,15 +53,12 @@
 		"files.autoSave": "afterDelay",
 		"files.autoSaveDelay": 500,
 
-		//Terminal
-		"terminal.integrated.shell.linux": "/bin/bash",
 	  },
 	
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"vscjava.vscode-java-pack",
-		"ms-vsliveshare.vsliveshare-pack",
-		"goessner.mdmath",
+		"ms-vsliveshare.vsliveshare",
 		"vsls-contrib.codetour"
 	],
 
